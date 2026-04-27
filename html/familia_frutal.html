@@ -3,13 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Familiafrutal</title> <link rel="stylesheet" href="/css/Familiafrutal.css">
+    <title>Familiafrutal</title> <link rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/categorias-productos.css">
 </head>
 <body>
-    <div class="pagina__familiafrutal">
-        <iframe src="header.html" class="frame frame--header"></iframe>
-        <iframe src="hero.html" class="frame frame--hero"></iframe>
-
+    <!-- Encabezado principal de familia frutal-->
+    <header class="header">
+    <!--contenedor interno del header:
+        agrupa el logo , menu de navegacion y los botones-->
+        <div class="header__contenedor">
+    <!--marca del sisito el logo y el nombre-->
+        <a href="#" class="header__marca">
+        <img src="/imagenes/logo imagen familia frutal.png"  alt="logo_familia_frutal" class="header__logo">
+        <span class="header__titulo">Familiafrutal</span>
+        </a>
+    <!--navegacion principal del sitio-->
+    <nav class="header__nav" aria-label="Navegación principal">
+        <ul class="header__lista">
+            <li class="header__item"><a href="#" class="header__link">Frutas</a></li>
+            <li class="header__item"><a href="#" class="header__link">Verduras</a></li>
+            <li class="header__item"><a href="#" class="header__link">Mis compras</a></li>
+            <li class="header__item"><a href="#" class="header__link">Carrito</a></li>
+        </ul>
+    </nav>
+    <!-- Acciones del usuario
+            boton secundario para iniciar sesion
+            boton primario para registrarse-->
+        <div class="header__acciones">
+            <a href="#" class="header__boton header__boton--secundario">Iniciar sesion </a>
+            <a href="#" class="header__boton header__boton--primario">Registrar</a>
+        </div>
     </div>
+    </header>
+
+    <!-- hero-->
+    <section class="hero">
+        <div class="hero__imagen-contenedor">
+        <img src="/imagenes/hero familia frutal.png" alt="Frutas y verduras frescas" class="hero__imagen">
+        <div class="hero__friltro-imagen-contenedor"></div>
+    <div class="hero__contenido">
+        <h1 class="hero__titulo">"Pide tus frutas y verduras frescas online"</h1>
+        <a href="#" class="hero__boton">Explorar productos</a>
+        <div class="hero__friltro-contenido"></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- categorias de productos-->
+    <section class="categorias">
+            <h2 class="categorias__titulo">Elige una categoría para empezar tu pedido</h2>
+
+        <div class="categorias__contenedor">
+        <a href="frutas.html" class="categorias__item">
+            <img src="/imagenes/categorias-productos-frutas.png" alt="Frutas" class="categorias__imagen">
+            <p class="categorias__nombre">Frutas</p>
+        </a>
+        
+
+        <a href="verduras.html" class="categorias__item">
+            <img src="/imagenes/categorias-productos-verduras.png" alt="Verduras" class="categorias__imagen">
+            <p class="categorias__nombre">Verduras</p>
+        </a>
+        </div>
+    </section>
 </body>
 </html>
