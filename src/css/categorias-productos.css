@@ -1,0 +1,40 @@
+:root{
+    /* categorias */
+    --categorias-titulo-text-align: center;
+    --categorias-titulo-margin-top: 50px;
+    --categorias-titulo-font-size: 30px;
+
+    --categorias-contenedor-display: flex;
+    --categorias-contenedor-justify: center;
+    --categorias-contenedor-gap: 700px;
+
+    --categorias-nombre-text-align: center;
+
+    --categorias-item-text-decoration: none;
+    --categorias-item-color: #000000;
+    --categorias-item-font-size: 20px;
+    --categorias-item-font-weight: bold;
+}
+
+.categorias__titulo {
+    text-align: var(--categorias-titulo-text-align);
+    margin-top: var(--categorias-titulo-margin-top);
+    font-size: var(--categorias-titulo-font-size);
+}
+
+.categorias__contenedor{
+    display: var(--categorias-contenedor-display);
+    justify-content: var(--categorias-contenedor-justify);
+    gap: var(--categorias-contenedor-gap);
+}
+
+.categorias__nombre{
+    text-align: var(--categorias-nombre-text-align);
+}
+
+.categorias__item{
+    text-decoration: var(--categorias-item-text-decoration);
+    color: var(--categorias-item-color);
+    font-size: var(--categorias-item-font-size);
+    font-weight: var(--categorias-item-font-weight);
+}

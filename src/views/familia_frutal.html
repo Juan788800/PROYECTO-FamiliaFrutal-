@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Familiafrutal</title> <link rel="stylesheet">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/hero.css">
-    <link rel="stylesheet" href="/css/categorias-productos.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/hero.css">
+    <link rel="stylesheet" href="/src/css/categorias-productos.css">
+    <link rel="stylesheet" href="/src/css/section-busqueda-de-productos.css">
 </head>
 <body>
     <!-- Encabezado principal de familia frutal-->
@@ -16,7 +17,7 @@
         <div class="header__contenedor">
     <!--marca del sisito el logo y el nombre-->
         <a href="#" class="header__marca">
-        <img src="/imagenes/logo imagen familia frutal.png"  alt="logo_familia_frutal" class="header__logo">
+        <img src="/assets/logo imagen familia frutal.png"  alt="logo_familia_frutal" class="header__logo">
         <span class="header__titulo">Familiafrutal</span>
         </a>
     <!--navegacion principal del sitio-->
@@ -41,7 +42,7 @@
     <!-- hero-->
     <section class="hero">
         <div class="hero__imagen-contenedor">
-        <img src="/imagenes/hero familia frutal.png" alt="Frutas y verduras frescas" class="hero__imagen">
+        <img src="/assets/hero familia frutal.png" alt="Frutas y verduras frescas" class="hero__imagen">
         <div class="hero__friltro-imagen-contenedor"></div>
     <div class="hero__contenido">
         <h1 class="hero__titulo">"Pide tus frutas y verduras frescas online"</h1>
@@ -57,16 +58,37 @@
 
         <div class="categorias__contenedor">
         <a href="frutas.html" class="categorias__item">
-            <img src="/imagenes/categorias-productos-frutas.png" alt="Frutas" class="categorias__imagen">
+            <img src="/assets/categorias-productos-frutas.png" alt="Frutas" class="categorias__imagen">
             <p class="categorias__nombre">Frutas</p>
         </a>
         
 
         <a href="verduras.html" class="categorias__item">
-            <img src="/imagenes/categorias-productos-verduras.png" alt="Verduras" class="categorias__imagen">
+            <img src="/assets/categorias-productos-verduras.png" alt="Verduras" class="categorias__imagen">
             <p class="categorias__nombre">Verduras</p>
         </a>
         </div>
     </section>
+    <section class="busqueda-productos">
+        <img src="/assets/section de frutas y verduras mas vendidas brocoli.png" alt="Brócoli" class="busqueda-productos__imagen busqueda-productos__imagen--izquierda">
+        
+
+        <div class="busqueda-productos__centro">
+        <h2 class="busqueda-productos__titulo">Frutas y verduras más vendidas</h2>
+        <div class="busqueda-productos__contenedor-barra">
+        <form class="busqueda-productos__barra">
+        <img src="/assets/section de busqueda frutas y verduras mas vendidas.png" alt="Buscar" class="busqueda-productos__icono">
+        <input 
+            type="text"
+            class="busqueda-productos__input"
+            placeholder="Qué frutas o verduras necesitas.........."
+            
+        >
+    </form>
+    
+        <img src="/assets/sectioon de frutas y verduras mas vendidas coco.png" alt="Coco" class="busqueda-productos__imagen busqueda-productos__imagen--derecha">
+        </div>
+    </div>
+</section>
 </body>
 </html>
