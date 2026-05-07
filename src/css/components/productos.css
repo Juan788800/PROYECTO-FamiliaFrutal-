@@ -1,0 +1,45 @@
+.busqueda-productos__lista {
+    width: 460px;
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    gap: 24px;
+    justify-content: start;
+}
+
+.producto-card {
+    width: 220px;
+    border: 3px solid #1f1f1f;
+    border-radius: 28px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.producto-card__imagen-contenedor {
+    height: 120px;
+    margin: 12px 12px 0;
+    background-color: #f3f3f3;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.producto-card__imagen {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    transform: translateY(8px);
+}
+
+.producto-card__pie {
+    border-top: 3px solid #1f1f1f;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.producto-card__titulo {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}

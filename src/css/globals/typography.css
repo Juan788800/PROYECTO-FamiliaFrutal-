@@ -1,0 +1,26 @@
+:root {
+    /* tipografia header */
+    --font-family--primario: "Inter", sans-serif;
+    --font-size: 20px;
+    --font-size--boton: 15px;
+    --font-weight-bold: 700;
+
+    /* tipografia hero */
+    --hero-titulo-font-family: "Inter", sans-serif;
+    --hero-titulo-font-size: 30px;
+    --hero-titulo-font-weight-bold: 700;
+    --hero-titulo-line-height: 1.1;
+    --hero-boton-font-size: 16px;
+    --hero-boton-font-weight: 600;
+
+    /* tipografia categorias */
+    --categorias-titulo-font-size: 24px;
+    --categorias-titulo-font-family: "Inter", sans-serif;
+    --categorias-titulo-font-weight-bold: 700;
+
+    /* tipografia busqueda */
+    --busqueda-titulo-font-size: 24px;
+    --busqueda-titulo-font-family: "Inter", sans-serif;
+    --busqueda-titulo-font-weight-bold: 700;
+
+}

@@ -1,0 +1,18 @@
+/* =========================BASE========================= */
+@import "/src/css/base/reset.css";
+@import "/src/css/base/variables.css";
+
+
+/* =========================COMPONENTES========================= */
+@import "/src/css/components/buttons.css";
+@import "/src/css/components/categorias-productos.css";
+@import "/src/css/components/header.css";
+@import "/src/css/components/hero.css";
+@import "/src/css/components/section-busqueda-de-productos.css";
+@import "/src/css/components/productos.css";
+
+
+/* =========================PAGES========================= */
+
+
+@import "/src/css/globals/typography.css";
