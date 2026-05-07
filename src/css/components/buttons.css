@@ -1,0 +1,46 @@
+.header__boton {
+    font-family: var(--font-family--primario);
+    font-size: var(--font-size--boton);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    padding: var(--header-padding-boton);
+    border-radius: var(--border-radius--boton);
+}
+
+.header__boton--secundario {
+    background-color: var(--color-boton--secundario);
+    color: var(--color-boton--secundario-texto);
+}
+
+
+.header__boton--primario {
+    background-color: var(--color-boton--primario);
+    color: var(--color-boton--primario-texto);
+    margin-right: var(--header-boton-margin-right);
+
+}
+
+.hero__boton {
+    display: inline-block;
+    padding: var(--hero-boton-padding);
+    width: auto;
+    background-color: var(--hero-boton-color-fondo);
+    color: var(--hero-boton-color-texto);
+    font-size: var(--hero-boton-font-size);
+    font-weight: var(--hero-boton-font-weight);
+    text-decoration: none;
+    border-radius: var(--hero-boton-border-radius);
+    border: none;
+    transform: translateY(var(--hero-boton-translate-y));
+    box-shadow: var(--hero-boton-box-shadow);
+    transition: var(--hero-boton-transition);
+}
+
+.hero__boton:hover {
+    background-color: var(--hero-boton-color-fondo-hover);
+    transform: translateY(var(--hero-boton-hover-translate-y));
+}
+
+.hero__boton:active {
+    transform: translateY(var(--hero-boton-active-translate-y));
+}
