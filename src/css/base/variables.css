@@ -89,10 +89,10 @@
     --categorias-item-font-weight: bold;
     
     /* busqueda-productos */
-    --busqueda-titulo-top: 130px;
+    --busqueda-titulo-top: 250px;
     --busqueda-titulo-left: 760px;
 
-    --busqueda-barra-top: 150px;
+    --busqueda-barra-top: 300px;
     --busqueda-barra-width: 1000px;
 
     --busqueda-icono-size: 22px;
