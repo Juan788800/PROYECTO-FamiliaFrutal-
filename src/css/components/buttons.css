@@ -44,3 +44,4 @@
 .hero__boton:active {
     transform: translateY(var(--hero-boton-active-translate-y));
 }
+

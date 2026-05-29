@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <img src="/assets/frutas-verduras-dibujadas-mano-fondo-dibujos-animados-espacios-copia-fondo-vectorial_591460-348.avif" alt="Imagen de fondo para la página de inicio de sesión" class="fondo-login">
+    <main class="contenedor-login">
+        <!-- Bloque Principal -->
+        <div class="tarjeta-login">
+
+
+            <div class="tarjeta-login__bienvenida">
+                <h1 class="tarjeta-login__titulo">Bienvenido A</h1>
+                <p class="tarjeta-login__marca">FamiliaFrutal</p>
+                <img src="/assets/fruits.gif" alt="Logotipo de Familiafrutal" class="tarjeta-login__imagen-gif-bienvenida">
+            </div>
+
+            <!-- Sección del Formulario (Izquierda en desktop / Abajo en móvil) -->
+            <div class="tarjeta-login__contenedor-formulario">
+                <h2 class="tarjeta-login__encabezado">Iniciar sesión</h2>
+
+                <div class="tarjeta-login__envoltura-logo">
+                    <img src="/assets/logo imagen familia frutal.png" alt="frutas-" class="tarjeta-login__logo">
+                </div>
+
+                <form class="tarjeta-login__formulario">
+                    <!-- Campo: Usuario -->
+                    <div class="tarjeta-login__campo">
+                        <label for="usuario" class="tarjeta-login__etiqueta">Usuario</label>
+                        <input type="text" id="usuario" class="tarjeta-login__entrada" required autocomplete="username">
+                    </div>
+
+                    <!-- Campo: Contraseña -->
+                    <div class="tarjeta-login__campo">
+                        <label for="contrasena" class="tarjeta-login__etiqueta">Contraseña</label>
+                        <input type="password" id="contrasena" class="tarjeta-login__entrada" required
+                            autocomplete="current-password">
+                        <a href="#" class="tarjeta-login__enlace">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <button type="submit" class="tarjeta-login__boton">Iniciar sesión</button>
+                </form>
+            </div>
+
+        </div>
+</body>
+
+</html>

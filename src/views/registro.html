@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiafrutal - Registro</title>
+    <link rel="stylesheet" href="/src/views/registro.css">
+</head>
+<body>
+
+    <main class="contenedor-registro">
+        
+        <img src="/assets/registro-fondo.jpg" alt="Fondo de frutas" class="pantalla__fondo">
+
+        <div class="tarjeta-registro">
+            
+            <div class="tarjeta-registro__bienvenida">
+                <h1 class="tarjeta-registro__titulo">Únete a la</h1>
+                <p class="tarjeta-registro__marca">Familiafrutal</p>
+                <p class="tarjeta-registro__eslogan">Frescura y salud directo a tu mesa.</p>
+                
+                <img src="/assets/ezgif-297efe3dc34a7454.gif" alt="frutas-animadas" class="tarjeta-registro__animacion-fruta">
+            </div>
+
+            <div class="tarjeta-registro__contenedor-formulario">
+                <h2 class="formulario-registro__titulo">Crear Cuenta</h2>
+                <p class="formulario-registro__subtitulo">Regístrate en pocos segundos</p>
+
+                <form class="formulario-registro">
+                    
+                    <div class="formulario-registro__grupo">
+                        <label for="reg-nombre" class="formulario-registro__etiqueta">Nombre Completo</label>
+                        <input type="text" id="reg-nombre" class="formulario-registro__entrada" placeholder="Juan Pérez" required>
+                    </div>
+
+                    <div class="formulario-registro__grupo">
+                        <label for="reg-correo" class="formulario-registro__etiqueta">Correo Electrónico</label>
+                        <input type="email" id="reg-correo" class="formulario-registro__entrada" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="formulario-registro__grupo">
+                        <label for="reg-contrasenia" class="formulario-registro__etiqueta">Contraseña</label>
+                        <input type="password" id="reg-contrasenia" class="formulario-registro__entrada" placeholder="Mínimo 8 caracteres" required>
+                    </div>
+
+                    <div class="formulario-registro__grupo">
+                        <label for="reg-confirmar" class="formulario-registro__etiqueta">Confirmar Contraseña</label>
+                        <input type="password" id="reg-confirmar" class="formulario-registro__entrada" placeholder="Repite tu contraseña" required>
+                    </div>
+
+                    <button type="submit" class="formulario-registro__boton formulario-registro__boton--enviar">
+                        Registrarse
+                    </button>
+                </form>
+
+                <p class="formulario-registro__pie">
+                    ¿Ya eres miembro? <a href="./login.html" class="formulario-registro__enlace">Inicia sesión aquí</a>
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

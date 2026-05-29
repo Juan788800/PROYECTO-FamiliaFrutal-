@@ -1,0 +1,275 @@
+/* ==========================================================================
+   VARIABLES GLOBALES (Paleta de Colores en Español)
+   ========================================================================== */
+:root {
+  --color-principal: #1b5e20;         /* Verde frutal de la marca */
+  --color-principal-hover: #2e7d32;   /* Verde claro para efectos hover */
+  --color-fondo-oscuro: #122315;      /* Verde oscuro de respaldo */
+  --color-verde-sutil: rgba(46, 91, 57, 0.15); /* Reflejo verde de bienvenida */
+  
+  --color-crema-base: rgba(244, 241, 234, 0.75); /* Tarjeta translúcida */
+  --color-entrada-fondo: rgba(255, 255, 255, 0.6); /* Fondo de los inputs */
+  
+  --color-texto-oscuro: #233329;      /* Títulos y etiquetas */
+  --color-texto-suave: #4a5d51;       /* Eslogans y subtítulos */
+  --color-blanco: #ffffff;
+  
+  --borde-sutil: rgba(43, 68, 54, 0.25);
+  --sombra-tarjeta: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   MÓDULO DE REGISTRO (METODOLOGÍA BEM EN ESPAÑOL)
+   ========================================================================== */
+
+/* Bloque Padre: Contenedor de la pantalla */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.contenedor-registro {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-fondo-oscuro);
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.pantalla__fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Bloque: Tarjeta de Registro */
+.tarjeta-registro {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 450px; /* Diseño móvil por defecto */
+  background: var(--color-crema-base);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: var(--sombra-tarjeta);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Elemento: Panel de Bienvenida */
+.tarjeta-registro__bienvenida {
+  background-color: var(--color-verde-sutil);
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-registro__titulo {
+  font-size: 1.5rem;
+  color: var(--color-texto-oscuro);
+  margin: 0;
+}
+
+.tarjeta-registro__marca {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-principal);
+  margin: 5px 0;
+}
+
+.tarjeta-registro__eslogan {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+  font-style: italic;
+}
+
+.tarjeta-registro__animacion-fruta {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+  margin-top: 15px;
+
+}
+
+.tarjeta-registro__contenedor-formulario {
+  padding: 30px;
+}
+
+/* --- Sub-bloque: Formulario de Registro --- */
+.formulario-registro__titulo {
+  font-size: 1.8rem;
+  color: var(--color-texto-oscuro);
+  margin-bottom: 5px;
+}
+
+.formulario-registro__subtitulo {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+  margin-bottom: 25px;
+}
+
+.formulario-registro__grupo {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formulario-registro__etiqueta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-texto-oscuro);
+}
+
+.formulario-registro__entrada {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--borde-sutil);
+  border-radius: 10px;
+  background: var(--color-entrada-fondo);
+  color: var(--color-texto-oscuro);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+/* Estado Focus de los Inputs */
+.formulario-registro__entrada:focus {
+  border-color: var(--color-principal);
+  background: var(--color-blanco);
+  box-shadow: 0 0 0 3px rgba(27, 94, 32, 0.15);
+}
+
+/* Elemento: Botón */
+.formulario-registro__boton {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 10px;
+}
+
+/* Modificador del Botón (Enviar/Submit) */
+.formulario-registro__boton--enviar {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  box-shadow: 0 4px 12px rgba(27, 94, 32, 0.2);
+}
+
+.formulario-registro__boton--enviar:hover {
+  background-color: var(--color-principal-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(27, 94, 32, 0.3);
+}
+
+/* Enlaces y Pie */
+.formulario-registro__pie {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}
+
+.formulario-registro__enlace {
+  color: var(--color-principal);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.formulario-registro__enlace:hover {
+  color: var(--color-principal-hover);
+  text-decoration: underline;
+}
+/* ==========================================================================
+   MEDIA QUERIES COMPATIBLES (CELULAR PREMIUM, TABLET Y PC)
+   ========================================================================== */
+
+/* 📱 1. Ajustes específicos para celulares de 390px x 844px (o similares) */
+@media (max-width: 400px) {
+  .tarjeta-registro__bienvenida {
+    padding: 20px 15px; /* Reducimos un poco el espacio vertical para que no ocupe tanta pantalla */
+  }
+
+  .tarjeta-registro__marca {
+    font-size: 1.8rem;  /* Ajustamos el tamaño del texto de la marca */
+  }
+
+  .tarjeta-registro__contenedor-formulario {
+    padding: 20px 15px; /* Más espacio para los inputs */
+  }
+
+  .formulario-registro__titulo {
+    font-size: 1.5rem;
+  }
+}
+
+/* 慶 2. Ajustes específicos para Tablets de 820px x 1180px */
+@media (min-width: 401px) and (max-width: 900px) {
+  .tarjeta-registro {
+    max-width: 550px; /* Hacemos la tarjeta un poco más ancha para que no se vea como un fideo estirado */
+    margin: 40px auto;
+  }
+
+  .tarjeta-registro__bienvenida {
+    padding: 40px;
+  }
+
+  .tarjeta-registro__contenedor-formulario {
+    padding: 40px;
+  }
+
+  /* Los inputs pueden ser un poquito más grandes en tablet para mejorar la usabilidad táctil */
+  .formulario-registro__entrada {
+    padding: 14px 18px; 
+  }
+}
+
+/* 💻 3. Vista Panorámica para Computadores (Desde 901px en adelante) */
+@media (min-width: 901px) {
+  .tarjeta-registro {
+    max-width: 950px;     /* Cambia a diseño horizontal panorámico de forma segura */
+    flex-direction: row; 
+  }
+
+  .tarjeta-registro__bienvenida {
+    width: 45%;
+    padding: 50px;
+    border-right: 1px solid rgba(43, 68, 54, 0.1);
+  }
+
+  .tarjeta-registro__contenedor-formulario {
+    width: 55%;
+    padding: 40px 50px;
+  }
+  
+  .tarjeta-registro__titulo {
+    font-size: 1.8rem;
+  }
+
+  .tarjeta-registro__marca {
+    font-size: 2.8rem;
+  }
+}

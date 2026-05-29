@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 350px);
     column-gap: 100px;
-    margin-left: 280px;
+    margin-left: 100px;
     row-gap: 50px;
 }
 .producto-card {
